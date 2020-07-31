@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,26 +7,18 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTreeProject
 {
-    class BinarySearchTree
+    class Node
     {
         //member variables
 
+        public int Data;
+        public Node nextNode;
         //constructor
-        public BinarySearchTree()
+        public Node(int data)
         {
-
+            Data = data;
         }
 
-        //methods
-
-        public void AddNodeData()
-        {
-
-        }
-
-        public void SearchValues() 
-        {
-            
-        }
+        //memeber methods
     }
 }
