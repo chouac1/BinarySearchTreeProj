@@ -12,7 +12,7 @@ namespace BinarySearchTreeProject
         //member variables
 
         public int Data;
-        public Node nextNode;
+        public Node NextNode;
         //constructor
         public Node(int data)
         {

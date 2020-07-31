@@ -9,6 +9,8 @@ namespace BinarySearchTreeProject
     class BinarySearchTree
     {
         //member variables
+        public Node Root;
+        public Node LastNode;
 
         //constructor
         public BinarySearchTree()
@@ -18,9 +20,18 @@ namespace BinarySearchTreeProject
 
         //methods
 
-        public void AddNodeData()
+        public void AddNodeData(Node nodeToAdd)
         {
-
+            if (Root == null)
+            {
+                Root = nodeToAdd;
+                LastNode = nodeToAdd;
+            }
+            else
+            {
+                LastNode.NextNode = nodeToAdd;
+                LastNode = nodeToAdd;
+            }
         }
 
         public void SearchValues() 
